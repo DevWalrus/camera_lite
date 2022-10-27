@@ -1,7 +1,7 @@
 # Camera Lite
 A simple ROS2 publisher, using OpenCV to capture a frame from the camera and publish.  This is a bare bones implimentation.  It does not do any camera calibration or other advanced stuff.  It just works.
 
-Has been tested on a Raspberry Pi 3 with Ubuntu 20.04 LTS and ROS Foxy.
+Has been tested on a with Ubuntu 22.04.1 LTS and ROS Humble.
 
 ## Dependencies
 In order to take a picture, a simple service definition is needed.  Please install [Camera Lite Interfaces](https://github.com/slaghuis/camera_lite_interfaces.git)
@@ -16,12 +16,12 @@ sudo apt install libopencv-dev python3-opencv
 ```
 Install the ROS - OpenCV Bridge and the vision library
 ```
-sudo apt-get install ros-foxy-cv-bridge
-sudo apt-get install ros-foxy-vision-opencv
+sudo apt-get install ros-humble-cv-bridge
+sudo apt-get install ros-humble-vision-opencv
 ```
-Clone this repo into the src directory of your ROS2 workspace. See the [ros2 tutorial](https://docs.ros.org/en/foxy/Tutorials/Workspace/Creating-A-Workspace.html) on how to create a workspace.
+Clone this repo into the src directory of your ROS2 workspace. See the [ros2 tutorial](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html) on how to create a workspace.
 ```
-git clone https://github.com/slaghuis/camera_lite.git
+git clone https://github.com/DevWalrus/camera_lite.git
 ```
 Back in the root of your ROS workspace, build and install the package.  
 ```
