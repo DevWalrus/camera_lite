@@ -30,10 +30,10 @@
 
 // #include <sensor_msgs/msg/compressed_image.hpp>
 #include <sensor_msgs/msg/image.hpp>
-#include <image_transport/image_transport.hpp>
+// #include <image_transport/image_transport.hpp>
 #include "std_msgs/msg/string.hpp"
 #include <geometry_msgs/msg/point_stamped.hpp>
-#include <message_filters/subscriber.h>
+// #include <message_filters/subscriber.h>
 
 #include <rclcpp/rclcpp.hpp>
 

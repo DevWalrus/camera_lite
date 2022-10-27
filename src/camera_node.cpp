@@ -26,7 +26,6 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-// #include <sensor_msgs/msg/compressed_image.hpp>
 #include <sensor_msgs/msg/image.hpp>
 
 // Global constants
@@ -91,7 +90,7 @@ class ImagePublisher : public rclcpp::Node
       // Declare and get Parameters
       frame_width_ = this->declare_parameter<int>("frame_width", FRAME_WIDTH);
       frame_height_ = this->declare_parameter<int>("frame_height", FRAME_HEIGHT);
-      device_id_ = static_cast<int>(this->declare_parameter("device_id", 0));
+      device_id_ = static_cast<int>(this->declare_parameter("device_id", 2));
       freq_ = this->declare_parameter("frequency", 30.0);
       frame_id_ = this->declare_parameter("frame_id", "camera");
 
